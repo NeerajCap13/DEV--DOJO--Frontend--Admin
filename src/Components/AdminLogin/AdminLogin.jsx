@@ -2,7 +2,10 @@ import React from 'react'
 
 const AdminLogin = () => {
   return (
-    <div>AdminLogin admin login is success</div>
+    <div>
+        <h1>hey bussy</h1>
+        <h6>very busy</h6>
+    </div>
   )
 }
 
