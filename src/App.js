@@ -1,11 +1,9 @@
-import AdminLogin from "./Components/AdminLogin/AdminLogin";
-import AdminRegister from "./Components/AdminRegister/AdminRegister";
+import Routing from "./Routing/Routing";
 
 function App() {
   return (
     <div>
-      <AdminLogin/>
-      {/* <AdminRegister/> */}
+      <Routing/>
     </div>
   );
 }
