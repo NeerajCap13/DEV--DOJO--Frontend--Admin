@@ -22,7 +22,7 @@ const AdminHeroSection = () => {
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '93vh',
-        background: 'linear-gradient(to right, #4CAF50, #2C6B43)', // Gradient background
+        background: 'linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%)', 
         color: '#FFFFFF',
         textAlign: 'center',
         padding: { xs: '2rem', sm: '4rem', md: '6rem' },

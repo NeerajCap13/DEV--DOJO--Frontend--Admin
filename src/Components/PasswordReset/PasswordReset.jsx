@@ -1,9 +1,8 @@
 import React from "react";
-import { Box, TextField, Button, Typography, Link as MuiLink } from "@mui/material";
+import { Box, TextField, Button, Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // Import Link from React Router Dom
 
-export default function AdminLogin() {
+export default function PasswordReset() {
   return (
     <Box
       sx={{
@@ -30,11 +29,12 @@ export default function AdminLogin() {
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "white" }}>
-          Login
+          Reset Password
         </Typography>
         <TextField
           fullWidth
-          label="Email"
+          label="New Password"
+          type="password"
           variant="outlined"
           sx={{
             mb: 2,
@@ -46,7 +46,7 @@ export default function AdminLogin() {
         />
         <TextField
           fullWidth
-          label="Password"
+          label="Confirm Password"
           type="password"
           variant="outlined"
           sx={{
@@ -72,35 +72,8 @@ export default function AdminLogin() {
             },
           }}
         >
-          Log In
+          Reset Password
         </Button>
-        <Box sx={{ mt: 2, display: "flex", justifyContent: "space-between" }}>
-          <MuiLink
-            component={Link}
-            to="/reset-password"
-            sx={{
-              color: "#FFD700",
-              textDecoration: "underline",
-              "&:hover": { textDecoration: "none" },
-            }}
-          >
-            Forgot Password?
-          </MuiLink>
-          <Typography variant="body2" sx={{ color: "white" }}>
-            Don't have an account?{" "}
-            <MuiLink
-              component={Link}
-              to="/register"
-              sx={{
-                color: "#FFD700",
-                textDecoration: "underline",
-                "&:hover": { textDecoration: "none" },
-              }}
-            >
-              Sign Up
-            </MuiLink>
-          </Typography>
-        </Box>
       </Box>
     </Box>
   );
